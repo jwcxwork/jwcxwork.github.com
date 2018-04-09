@@ -1,0 +1,221 @@
+<html>
+<style>
+c1 {
+    text-align: right;
+} 
+.button {
+    background-color: #2E64FE;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+div {
+    padding: 2px;
+    border: 4px solid #FFFFFF;
+}
+p.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+div.a {
+    font-size: 25px;
+}
+div.b {
+    padding: 2px;
+    border: 4px solid #2E64FE;
+}
+h2 {
+    font-size: 16px;
+	color: white;
+}
+
+h1 {
+    font-size: 28px;
+    color: white;
+}
+h4 {
+    font-size: 28px;
+    text-align: right;
+}
+h3 {
+    font-size: 12px;
+    color: white;
+}
+h5 {
+    font-size: 12px;
+    text-align: right;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+</style>
+<body style="background:url(bg.jpg);background-repeat:no-repeat;background-size:100% 100%">
+<div class="a">
+<h1>
+<p class="sansserif">&nbsp Checkout</p>
+</h1>
+<hr>
+<h2>
+<p class="sansserif">&nbsp All transactions are secure and encrypted.</p>
+</h2>
+</div>
+
+<div class="a">
+
+
+<div class="b">
+
+<h2>
+<p class="sansserif">&nbsp Iphone X  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 499$
+
+</p>
+
+</h2>
+<h3>
+<p class="sansserif">&nbsp A good product.</p>
+</h3>
+</div>
+
+<div class="b">
+
+<h2>
+<p class="sansserif">&nbsp Ipad Pro&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 999$
+
+</p>
+
+</h2>
+<h3>
+<p class="sansserif">&nbsp A better product.</p>
+</h3>
+</div>
+
+<div class="b">
+
+<h2>
+<p class="sansserif">&nbsp MacBook Pro&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 1499$
+
+</p>
+
+</h2>
+<h3>
+<p class="sansserif">&nbsp The best product.</p>
+</h3>
+</div>
+
+<h1>
+<p class="sansserif">&nbsp Payment</p>
+</h1>
+<hr>
+<h2>
+<p class="sansserif">
+
+<label class="container">Credit card
+  <input type="radio"name="a">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Debit card
+  <input type="radio"name="a">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Paypal
+  <input type="radio"name="a">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Bitcoin
+  <input type="radio"name="a">
+  <span class="checkmark"></span>
+</label>
+<form>
+<h2>
+<p class="sansserif">&nbsp Name on card</p>
+</h2>
+<input type="text" id="name" name="name">
+</form>
+<form>
+<h2>
+<p class="sansserif">&nbsp Credit card number</p>
+</h2>
+
+<input type="text" id="card" name="card">
+<h2>
+<button class="button">Continue</button>
+</h2>
+</form>
+<form>
+<h2>
+<p class="sansserif">&nbsp Developed by Jirapas Jipipop</p>
+</h2>
+
+</form>
+</p>
+</h2>
+</div>
+</body>
+
+</html>
